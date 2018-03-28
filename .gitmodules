@@ -1,0 +1,6 @@
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com/nos/smart-contracts
+[submodule "neo-local"]
+	path = neo-local
+	url = https://github.com/neoauth/neo-local.git

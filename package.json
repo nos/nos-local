@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "prestart": "git submodule update --init",
+    "start": "node scripts/cli.js start",
+    "stop": "node scripts/cli.js stop"
+  },
+  "dependencies": {
+    "suppose": "https://github.com/jprichardson/node-suppose.git"
+  }
+}
