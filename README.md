@@ -18,7 +18,7 @@ Once you're at the `neo-python` prompt (wallet password is "coz"):
 ```
 open wallet ./neo-privnet.wallet
 build /smart-contracts/contract.py
-import contract /smart-contracts/contract.avm 0705070505 05 True False
+import contract /smart-contracts/contract.avm 0710 05 True False
 ```
 
 Wait a hot minute and the nOS name service contract is deployed!
