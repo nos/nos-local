@@ -35,4 +35,4 @@ Wait for the TX to clear, and test your domain is registered:
 testinvoke e60a3fa8149a853eb4dff4f6ed93c931646a9e22 GetDomain ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'bucket.nos']
 ```
 
-Visit `bucket.not` in the client!
+Visit `bucket.nos` in the client!
