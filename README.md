@@ -2,11 +2,12 @@
 
 An environment for nOS development.
 
-**TODO:** Make the following all automatic:
+**TODO:** Make the following all automatic 🤖:
 
 For now, manually start the `neo-local` environment and load contracts:
 
 ```sh
+git submodule update --init
 cd neo-local
 cp ../contracts/*.py ./smart-contracts
 
@@ -21,7 +22,9 @@ build /smart-contracts/contract.py
 import contract /smart-contracts/contract.avm 0710 05 True False
 ```
 
-Wait a hot minute and the nOS name service contract is deployed!
+Fill out the prompts for the contract meta data. Just hit `[enter]` if you're in a hurry 😉.
+
+Wait a 🔥 minute and the nOS name service contract is deployed!
 
 Let's register an example domain name with nOS:
 
