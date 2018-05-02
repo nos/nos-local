@@ -14,6 +14,8 @@ cp ../contracts/*.py ./smart-contracts
 make
 ```
 
+Make sure you have added `127.0.0.1 neo-nodes` to your host file if you want to use `testInvoke` from your nOS dApp's.
+
 Once you're at the `neo-python` prompt (wallet password is "coz"):
 
 ```
