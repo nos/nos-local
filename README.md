@@ -2,16 +2,12 @@
 
 An environment for nOS development.
 
-**TODO:** Make the following all automatic 🤖:
-
 For now, manually start the `neo-local` environment and load contracts:
 
 ```sh
-git submodule update --init
-cd neo-local
-cp ../contracts/*.py ./smart-contracts
-
-make
+$ git clone https://github.com/nos/nos-local.git
+$ cd nos-local
+$ make run
 ```
 
 Make sure you have added `127.0.0.1 neo-nodes` to your host file if you want to use `testInvoke` from your nOS dApp's.
