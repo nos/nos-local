@@ -10,7 +10,16 @@ $ cd nos-local
 $ make run
 ```
 
-Make sure you have added `127.0.0.1 neo-nodes` to your host file if you want to use `testInvoke` from your nOS dApp's.
+Windows enviroment
+
+Install Docker: https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install
+Switch to linux containers (right click on tray icon)
+
+```sh
+$ git clone https://github.com/nos/nos-local.git
+$ cd nos-local
+$ makeWIN
+```
 
 Once you're at the `neo-python` prompt (wallet password is "coz"):
 
