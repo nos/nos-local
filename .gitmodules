@@ -3,4 +3,4 @@
 	url = https://github.com/nos/smart-contracts
 [submodule "neo-local"]
 	path = neo-local
-	url = https://github.com/neoauth/neo-local.git
+	url = https://github.com/CityOfZion/neo-local.git
