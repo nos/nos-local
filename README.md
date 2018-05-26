@@ -1,5 +1,7 @@
 # nOS Local
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nos/nos-local.svg)](https://greenkeeper.io/)
+
 An environment for nOS development.
 
 For now, manually start the `neo-local` environment and load contracts:
