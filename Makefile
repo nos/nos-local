@@ -10,4 +10,5 @@ run:
 	@git submodule update --init && \
 	cd neo-local && \
 	cp ../contracts/*.py ./smart-contracts && \
+	cp ../contracts/*.avm ./smart-contracts && \
 	make
