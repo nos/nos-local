@@ -10,6 +10,12 @@ $ cd nos-local
 $ make run
 ```
 
+If you exit the neo-python prompt, access it again with Docker:
+```
+$ sudo docker exec -it neo-python /bin/sh -c /bin/bash
+$ np-prompt -p -v
+ ```
+
 Windows enviroment
 
 Install Docker: https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install
