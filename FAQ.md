@@ -36,17 +36,14 @@ docker ps
 
 Windows
 
-```
-cd <project location>\nos-local\neo-local
-make stop
-
-```
-Wait for the containers to stop completely, then run:
+Run:
 
 ```
 cd <project location>\nos-local
 makeWIN
 ```
+or just restart docker and/or delete all images/containers if problems persist
+
 You may also check from docker command:
 
 ```
@@ -91,6 +88,9 @@ Add one line to /etc/hosts:
 The easy way is to export the wallet from container, e.g.
 
 ```
+$ docker exec -it neo-python /bin/sh -c /bin/bash
+$ np-prompt -p -v
+
 neo> export wif AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y
 [wallet password]> ***
 WIF key export: KxDgvEKzgSBPPfuVfw67oPQBSjidEiqTHURKSDL1R7yGaGYAeYnr
@@ -132,9 +132,7 @@ Log into the container:
 ```
 docker exec -it 05481644fe08 /bin/bash
 
-cd /opt/node1/neo-cli/Logs
-
-root@05481644fe08:/opt/node1/neo-cli/Logs# tail -f *.log
+tail -f /opt/node1/neo-cli/Logs/*.log
 
 ```
 
@@ -145,15 +143,7 @@ The log should keep rolling, if not, try the `make stop` as shown in question 2.
 # Error messages and solutions
 
 
-1. Error:
-
-```
-[Dapp] Error: Could not perform operation on '<operation>' on contract with address '<contract address>'
-```
-
-Solution: Check and make sure blocks are in sync between neoscan and python prompt.
-
-2. Error:
+- Error:
 ```
 [E 180302 22:30:01 ExecutionEngine:825] COULD NOT EXECUTE OP: Invalid list operation b'z' ROLL
 [E 180302 22:30:01 ExecutionEngine:826] Invalid list operation
@@ -171,3 +161,6 @@ Solution:
 
 It looks like we tried to test a contract that wanted some parameters but didn’t supply them. Note than if you’re building and testing contracts and you see an error similar to this, that is probably the issue you are running into.
 
+# Reference
+
+neo-python document:  https://neo-python.readthedocs.io/en/latest/overview.html
