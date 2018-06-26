@@ -130,8 +130,8 @@ Questions/Answers:
     Log into the container:
 
     ```
-    - docker exec -it 05481644fe08 /bin/bash
-    - tail -f /opt/node1/neo-cli/Logs/*.log
+     docker exec -it 05481644fe08 /bin/bash
+     tail -f /opt/node1/neo-cli/Logs/*.log
 
     ```
 
