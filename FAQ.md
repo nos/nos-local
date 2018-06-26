@@ -130,9 +130,8 @@ Questions/Answers:
     Log into the container:
 
     ```
-    docker exec -it 05481644fe08 /bin/bash
-
-    tail -f /opt/node1/neo-cli/Logs/*.log
+    - docker exec -it 05481644fe08 /bin/bash
+    - tail -f /opt/node1/neo-cli/Logs/*.log
 
     ```
 
@@ -157,10 +156,6 @@ Questions/Answers:
     Exception: Invalid list operation
     ```
 
-Solution:
-
-    It looks like we tried to test a contract that wanted some parameters but didn’t supply them. Note than if you’re building and testing contracts and you see an error similar to this, that is probably the issue you are running into.
-
-# Reference
-
-    neo-python document:  https://neo-python.readthedocs.io/en/latest/overview.html
+- Possible cause:  It looks like the parameters do not match what defined in contract.
+- Solution:   Review the contract code and caller code and make sure the parameters match.  
+- Reference:  https://neo-python.readthedocs.io/en/latest/overview.html
