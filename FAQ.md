@@ -159,3 +159,7 @@ Questions/Answers:
 - Possible cause:  It looks like the parameters do not match what defined in contract.
 - Solution:   Review the contract code and caller code and make sure the parameters match.  
 - Reference:  https://neo-python.readthedocs.io/en/latest/overview.html
+
+# Resources
+
+  - [nOS dAPP Getting Started Guide](https://medium.com/@SharedMocha/nos-dapp-getting-started-guide-187e72ed9ace)
