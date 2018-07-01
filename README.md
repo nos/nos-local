@@ -42,13 +42,13 @@ Wait a 🔥 minute and the nOS name service contract is deployed!
 Let's register an example domain name with nOS:
 
 ```
-testinvoke e60a3fa8149a853eb4dff4f6ed93c931646a9e22 RegisterDomain ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'bucket.nos', 'AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'https://ihasabucket.com/']
+testinvoke 9a309cfe03cead5b653bbb11f68ff6beced8f031 RegisterDomain ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'bucket.neo', 'https://ihasabucket.com/', 'AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y']
 ```
 
 Wait for the TX to clear, and test your domain is registered:
 
 ```
-testinvoke e60a3fa8149a853eb4dff4f6ed93c931646a9e22 GetDomain ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'bucket.nos']
+testinvoke 9a309cfe03cead5b653bbb11f68ff6beced8f031 GetDomain ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'bucket.neo']
 ```
 
-Visit `bucket.nos` in the client!
+Visit `nos://bucket.neo` in the client!
