@@ -1,6 +1,6 @@
 # FAQ/Troubleshooting Guide
 
-These are common issues encountered when starting to develop DApp with nOS. Hopefully it can help new developer to get started quickly.
+These are common issues encountered when starting to develop dApps with nOS. Hopefully it can help new developers to get started quickly.
 
 Note:  if the command is not environment specific, you may run it from Windows/MacOS/Linux.
 
